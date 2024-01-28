@@ -44,29 +44,28 @@ body {
   font-weight: 400;
   margin-bottom: 100px;
   line-height: 150%;
-  font-size: 18px;
+  font-size: 14px;
 }
 .Header-container {
-  max-width: 1860px;
-  margin: 20px auto 0px auto;
+  max-width: 1400px;
+  margin: 20px auto 0 auto;
 }
 .Header-banner {
   display: flex;
   width: 100%;
   background-color: #FF9500;
-  border-radius: 8px;
+  border-radius: 6px;
   justify-content: center;
-  align-items: center;
-  align-self: stretch;
+  align-items: stretch;
   gap: 23px;
-  padding: 14px 0px;
+  padding: 10px 0px;
 }
 .Header-banner .title {
   display: inline-block;
   color: white;
 }
 .Header-content {
-  padding: 20px 132px;
+  padding: 16px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -74,14 +73,16 @@ body {
 .Header-navigator {
   border-radius: 8px;
   display: flex;
-  gap: 25px;
+  gap: 15px;
+  align-items: center;
+  align-self: stretch;
 }
 .Header-img {
   background-color: #FF9500;
   display: flex;
-  max-width: 54px;
-  height: 54px;
-  padding: 7px;
+  max-width: 40px;
+  height: 40px;
+  padding: 5.7px;
   justify-content: center;
   align-items: center;
   border-radius: inherit;
@@ -92,9 +93,9 @@ body {
   justify-content: center;
   gap: 10px;
 }
-.Header-button {
+.Header-button, .Header-login > a {
   display: inline-block;
-  padding: 14px 24px;
+  padding: 10px 15px;
   text-align: center;
   text-decoration: none;
   color: #262626;
@@ -108,15 +109,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-}
-.Header-login > a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 14px 34px;
-  border-radius: 8px;
-  text-decoration: none;
+  gap: 20px;
 }
 .Header-login > a:last-child {
   background-color: #FF9500;
