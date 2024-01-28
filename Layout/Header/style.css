@@ -1,0 +1,129 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.Header {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
+  margin-bottom: 100px;
+  line-height: 150%;
+  font-size: 18px;
+}
+.Header-container {
+  max-width: 1860px;
+  margin: 20px auto 0px auto;
+}
+.Header-banner {
+  display: flex;
+  width: 100%;
+  background-color: #FF9500;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  gap: 23px;
+  padding: 14px 0px;
+}
+.Header-banner .title {
+  display: inline-block;
+  color: white;
+}
+.Header-content {
+  padding: 20px 132px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Header-navigator {
+  border-radius: 8px;
+  display: flex;
+  gap: 25px;
+}
+.Header-img {
+  background-color: #FF9500;
+  display: flex;
+  max-width: 54px;
+  height: 54px;
+  padding: 7px;
+  justify-content: center;
+  align-items: center;
+  border-radius: inherit;
+}
+.Header-button-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.Header-button {
+  display: inline-block;
+  padding: 14px 24px;
+  text-align: center;
+  text-decoration: none;
+  color: #262626;
+  border-radius: 8px;
+}
+.Header-button:hover, .Header-login > a:hover {
+  transition: 0.1s linear;
+  background-color: #F1F1F3;
+}
+.Header-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.Header-login > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 34px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.Header-login > a:last-child {
+  background-color: #FF9500;
+  color: white;
+}
+.Header-login > a:last-child:hover {
+  background-color: #e28317;
+}
+
+/*# sourceMappingURL=style.css.map */
