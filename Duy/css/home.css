@@ -1,0 +1,225 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 14px;
+  background-color: #F7F7F8;
+}
+
+.Header {
+  margin-bottom: 80px;
+}
+.Header-container {
+  margin: 20px 20px 0 20px;
+}
+.Header-banner {
+  display: flex;
+  width: 100%;
+  background-color: #FF9500;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: stretch;
+  gap: 23px;
+  padding: 10px 0px;
+}
+.Header-banner .title {
+  display: inline-block;
+  color: white;
+}
+.Header-content {
+  padding: 16px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #F1F1F3;
+}
+.Header-navigator {
+  border-radius: 8px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  align-self: stretch;
+}
+.Header-img {
+  background-color: #FF9500;
+  display: flex;
+  max-width: 40px;
+  height: 40px;
+  padding: 5.7px;
+  justify-content: center;
+  align-items: center;
+  border-radius: inherit;
+}
+.Header-button-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.Header-button, .Header-login > a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  color: #262626;
+  border-radius: 8px;
+}
+.Header-button:hover, .Header-login > a:hover {
+  transition: 0.1s linear;
+  background-color: #F1F1F3;
+}
+.Header-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.Header-login > a:last-child {
+  background-color: #FF9500;
+  color: white;
+}
+.Header-login > a:last-child:hover {
+  background-color: #e28317;
+}
+
+.Hero-container {
+  margin: 0px 250px 100px 250px;
+}
+.Hero-content {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Hero-content h3 {
+  padding: 8px 0px;
+  font-size: 28px;
+  font-weight: 500;
+  color: #262626;
+  text-align: center;
+  margin-bottom: 6px;
+}
+.Hero-content span {
+  display: inline-block;
+  padding: 4px 0px;
+  font-size: 16px;
+  text-align: center;
+  color: #262626;
+}
+.Hero-image {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px 12px 12px;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid #F1F1F3;
+  background: #FCFCFD;
+  margin-bottom: 16px;
+}
+.Hero-image .icon {
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFF4E5;
+  border-radius: 6px;
+}
+.Hero-image h2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 36px;
+  color: #1A1A1A;
+}
+.Hero-image h2:before {
+  content: "Unlock ";
+  color: #FF9500;
+}
+.Hero-image > svg {
+  position: absolute;
+  left: -24px;
+  top: -30px;
+}
+.Hero-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.Hero-buttons button {
+  cursor: pointer;
+  display: inline-flex;
+  padding: 14px 20px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  background: #FFF;
+  border: 1px solid #F1F1F3;
+  transition: 0.1s linear;
+}
+.Hero-buttons button:hover {
+  background: #F1F1F3;
+}
+.Hero-buttons button:first-child {
+  background: #FF9500;
+  color: #FFF;
+}
+.Hero-buttons button:first-child:hover {
+  background: #e28317;
+}
+
+.brand-container {
+  display: flex;
+  align-items: flex-start;
+  margin: 0px 80px 80px 80px;
+  padding: 24px;
+  border-radius: 8px;
+  border: 1px solid #F1F1F3;
+  background: #FCFCFD;
+}
+.brand-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  flex: 1 0 0;
+}
+
+/*# sourceMappingURL=home.css.map */
