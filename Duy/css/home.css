@@ -116,8 +116,13 @@ body {
   background-color: #e28317;
 }
 
+main {
+  margin: 0px 80px;
+}
+
 .Hero-container {
-  margin: 0px 250px 100px 250px;
+  margin: 0px 170px;
+  margin-bottom: 100px;
 }
 .Hero-content {
   margin-bottom: 50px;
@@ -208,7 +213,7 @@ body {
 .brand-container {
   display: flex;
   align-items: flex-start;
-  margin: 0px 80px 80px 80px;
+  margin-bottom: 80px;
   padding: 24px;
   border-radius: 8px;
   border: 1px solid #F1F1F3;
@@ -220,6 +225,101 @@ body {
   align-items: center;
   padding: 20px 30px;
   flex: 1 0 0;
+}
+
+.main-img-container {
+  margin: 0px -14px;
+  border-radius: 12px;
+  margin-bottom: 86px;
+}
+.main-img-container img {
+  object-fit: cover;
+}
+
+.benefits-container {
+  margin-bottom: 100px;
+}
+.benefits-top {
+  display: flex;
+  align-items: flex-end;
+  gap: 250px;
+  align-self: stretch;
+  margin-bottom: 60px;
+}
+.benefits-top-content > h2 {
+  padding: 9.5px 0px;
+  font-size: 38px;
+  font-weight: 600;
+  color: #262626;
+}
+.benefits-top-content > p {
+  padding: 4px 0px;
+  color: #59595A;
+  font-size: 16px;
+}
+.benefits-top-view {
+  display: flex;
+  padding: 14px 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  border: 1px solid #F1F1F3;
+  background: #FCFCFD;
+}
+.benefits-top-view > button {
+  font-size: 14px;
+  white-space: nowrap;
+  font-weight: 500px;
+}
+.benefits-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.benefits-bottom-item {
+  padding: 40px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.benefits-bottom-item > h2 {
+  display: flex;
+  height: 47px;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 40%;
+}
+.benefits-bottom-item-content > h3 {
+  padding: 10px 0px;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: -0.12px;
+  color: #333;
+  margin-bottom: 10px;
+}
+.benefits-bottom-item-content > p {
+  padding: 4px 0px;
+  font-size: 16px;
+  color: #4C4C4D;
+}
+.benefits-bottom-item-button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.benefits-bottom-item-button > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  padding: 14px;
+  border: 1px solid #F1F1F3;
+  background: #FCFCFD;
 }
 
 /*# sourceMappingURL=home.css.map */
