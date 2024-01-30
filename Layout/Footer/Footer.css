@@ -62,3 +62,6 @@ a{
     display: flex;
     gap: 5px;
 }
+strong{
+    font-weight: bold;
+}
