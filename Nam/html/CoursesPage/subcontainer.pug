@@ -1,0 +1,33 @@
+mixin subcontainer(hd,pa,imgSrc1,imgSrc2,imgSrc3,time,level,author, lesson1, lesson2, lesson3, lesson4, lesson5)
+    .head 
+        span.heading= hd
+        p.pa=pa
+        
+    .body 
+        .image-container  
+            .imgs
+                img(src=imgSrc1, alt="pic")
+                img(src=imgSrc2, alt="pic")
+                img(src=imgSrc3, alt="pic")
+            .details 
+                span.time=`${time} Weeks`
+                span.level=level 
+                span.author=`By ${author}`
+        .Curri 
+            span.Curr-details Curriculum
+            .paths 
+                .path 
+                    h2.Number 01
+                    p.Lesson=lesson1
+                .path 
+                    h2.Number 02
+                    p.Lesson=lesson2
+                .path 
+                    h2.Number 03
+                    p.Lesson=lesson3
+                .path 
+                    h2.Number 04
+                    p.Lesson=lesson4
+                .path 
+                    h2.Number 05
+                    p.Lesson=lesson5
