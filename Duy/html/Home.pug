@@ -1,4 +1,4 @@
-mixin benefit-bottom-item(number, title, content)
+mixin benefit-item(number, title, content)
     .benefits-bottom-item
         h2= number
         .benefits-bottom-item-content
@@ -8,6 +8,26 @@ mixin benefit-bottom-item(number, title, content)
             button
                 svg(xmlns='http://www.w3.org/2000/svg' width='26' height='26' viewbox='0 0 26 26' fill='none')
                     path(fill-rule='evenodd' clip-rule='evenodd' d='M6.78557 19.2144C7.16633 19.5952 7.78367 19.5952 8.16443 19.2144L17.55 9.82886V17.225C17.55 17.7635 17.9865 18.2 18.525 18.2C19.0635 18.2 19.5 17.7635 19.5 17.225V7.475C19.5 6.93652 19.0635 6.5 18.525 6.5H8.775C8.23652 6.5 7.8 6.93652 7.8 7.475C7.8 8.01348 8.23652 8.45 8.775 8.45H16.1711L6.78557 17.8356C6.40481 18.2163 6.40481 18.8337 6.78557 19.2144Z' fill='#FF9500')
+mixin course-item(No,time,level,lecturer,title,content)
+    .course-bottom-item 
+        img(src=`../Resources/images/course (${No}).png`, alt="")
+        .course-bottom-container 
+            .course-bottom-time 
+                span=time
+                span=level
+            span.lecturer=lecturer
+        h3=title
+        p=content
+        .course-bottom-button
+            button Get it Now
+mixin top-tile(title,content)
+    .benefits-top
+        .benefits-top-content
+            h2= title 
+            p= content
+        .benefits-top-view 
+            button View All
+
 
 
 
@@ -54,18 +74,23 @@ html(lang="en")
                     img(src="../Resources/images/Container.png", alt="")    
             section.benefits
                 .benefits-container
-                    .benefits-top
-                        .benefits-top-content
-                            h2 Benefits
-                            p Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.
-                        .benefits-top-view 
-                            button View All
+                    +top-tile("Benefits", "Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.")
                     .benefits-bottom 
-                        +benefit-bottom-item("01", "Learn Anywhere", "Fit your coursework around your existing commitments and obligations.")
-                        +benefit-bottom-item("02", "Expert Instruction", "Learn from industry experts who have hands-on experience in design and development.")
-                        +benefit-bottom-item("03", "Diverse Course Offerings", "Explore a wide range of design and development courses covering various topics.")
-                        +benefit-bottom-item("04", "Updated Curriculum", "Access courses with up-to-date content reflecting the latest trends and industry practices.")
-                        +benefit-bottom-item("05", "Practical Projects and Assignments", "Develop a portfolio showcasing your skills and abilities to potential employers.")
-                        +benefit-bottom-item("06", "Interactive Learning Environment", "Collaborate with fellow learners, exchanging ideas and feedback to enhance your understanding.")
+                        +benefit-item("01", "Learn Anywhere", "Fit your coursework around your existing commitments and obligations.")
+                        +benefit-item("02", "Expert Instruction", "Learn from industry experts who have hands-on experience in design and development.")
+                        +benefit-item("03", "Diverse Course Offerings", "Explore a wide range of design and development courses covering various topics.")
+                        +benefit-item("04", "Updated Curriculum", "Access courses with up-to-date content reflecting the latest trends and industry practices.")
+                        +benefit-item("05", "Practical Projects and Assignments", "Develop a portfolio showcasing your skills and abilities to potential employers.")
+                        +benefit-item("06", "Interactive Learning Environment", "Collaborate with fellow learners, exchanging ideas and feedback to enhance your understanding.")
+            section.course 
+                .course-container
+                    +top-tile("Courses", "Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.")
+                    .course-bottom
+                        +course-item(0,"4 Weeks","Beginner","By John Smith","Web Design Fundamentals","Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.")
+                        +course-item(1,"6 Weeks","Intermediate","By Emily Johnson","UI/UX Design","Master the art of creating intuitive user interfaces (UI) and enhancing user experiences (UX). Learn design principles, wireframing, prototyping, and usability testing techniques.")
+                        +course-item(2,"8 Weeks","Intermediate","By David Brown","Mobile App Development","Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin.")
+                        +course-item(3,"10 Weeks","Beginner","By Sarah Thompson","Graphic Design for Beginners","Discover the fundamentals of graphic design, including typography, color theory, layout design, and image manipulation techniques. Create visually stunning designs for print and digital media.")
+                        +course-item(4,"10 Weeks","Intermediate","By Michael Adams","Front-End Web Development","Become proficient in front-end web development. Learn HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React. Build interactive and responsive websites.")
+                        +course-item(5,"6 Weeks","Advance","By Jennifer Wilson","Advanced JavaScript","Take your JavaScript skills to the next level. Explore advanced concepts like closures, prototypes, asynchronous programming, and ES6 features. Build complex applications with confidence.")
 
-
+                            

@@ -182,6 +182,9 @@ main{
                 line-height: 40%;
             }
             &-content > h3{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
                 padding: 10px 0px;
                 font-weight: 600;
                 font-size: 20px;
@@ -212,4 +215,79 @@ main{
     }
 }
 
+.course{
+    &-container{
+        margin-bottom: 100px;
+    }
+    &-bottom{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        &-item{
+            border-radius: 10px;
+            border: 1px solid #F1F1F3;
+            padding: 40px;
+            background: white;
+            & img{
+                margin-bottom: 24px;
+            }
+            & h3{
+                font-size: 20px;
+                font-weight: 600;
+                color: #262626;
+                display:flex;
+                align-items:center;
+                margin-bottom: 10px;
+            }
+            & p{
+                padding-right: 10px;
+                font-size: 16px;
+                color: #4C4C4D;
+                margin-bottom: 30px;
+            }
+            & .course-bottom-button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-self: stretch;
+                border-radius: 6px;
+                padding: 14px 24px;
+                border: 1px solid  #F1F1F3;
+                background:  #F7F7F8;
+                & button{
+                    font-weight: 500;
+                    color:  #262626;
+                    text-align: center;
+                }
+            }
+        }
+        &-container{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 24px;
+            & .lecturer{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 16px;
+                font-weight: 500;
+                color:  #262626;
+            }
+        }
+        &-time{
+            display: inline-flex;
+            gap: 10px;
+            & span{
+                color:  #4C4C4D;
+                border-radius: 6px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 8px 14px;
+                border: 1px solid  #F1F1F3;
+            }
+        }
+    }
+
+}
 
