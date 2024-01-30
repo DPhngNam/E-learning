@@ -283,6 +283,7 @@ main {
   display: flex;
   flex-direction: column;
   row-gap: 40px;
+  flex: 1;
 }
 .benefits-bottom-item > h2 {
   display: flex;
@@ -311,6 +312,7 @@ main {
   color: #4C4C4D;
 }
 .benefits-bottom-item-button {
+  margin-top: auto;
   display: flex;
   justify-content: flex-end;
   align-items: center;
