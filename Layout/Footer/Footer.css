@@ -18,6 +18,8 @@ body{
 
 .icon{
     background-color: orange;
+    width: 24px;
+    height:25px;
 }
 .copyright{
     margin-top: 50px;

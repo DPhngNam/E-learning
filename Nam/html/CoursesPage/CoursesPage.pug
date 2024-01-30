@@ -1,0 +1,89 @@
+include ./subcontainer.pug
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="../../../Layout/Footer/Footer.css")
+        link(rel="stylesheet", href="../../../Layout/Header/style.css")
+        link(rel="stylesheet", href="../../css/CoursesPage.css")
+    body 
+        include ../../../Layout/Header/Header.pug
+        main
+            section.containerA 
+                h1 Online Courses on Design and Development
+                p.welcome Welcome to our online course page, where you can enhance your skills in design and development. Choose from our carefully curated selection of 10 courses designed to provide you with comprehensive knowledge and practical experience. Explore the courses below and find the perfect fit for your learning journey.
+                button View course
+            section.containerB
+                +subcontainer('Web Design Fundamentals',
+                            'Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.',
+                            './Image.png',
+                            './Image(1).png',
+                            './Image(3).png',
+                            '4',
+                            'Beginer',
+                            'John Smith',
+                            'Introduction to HTML',
+                            'Styling with CSS',
+                            'Introduction to Responsive Design',
+                            'Design Principles for Web',
+                            'Building a Basic Website'
+                            )
+                +subcontainer('UI/UX Design',
+                            'Master the art of creating intuitive user interfaces (UI) and enhancing user experiences (UX). Learn design principles, wireframing, prototyping, and usability testing techniques.',
+                            './Image(4).png',
+                            './Image(5).png',
+                            './Image (6).png',
+                            '6',
+                            'Intermediate',
+                            'Emily Johnson',
+                            'Introduction to UI/UX Design',
+                            'User Research and Personas',
+                            'Wireframing and Prototyping',
+                            'Visual Design and Branding',
+                            'Usability Testing and Iteration'
+                            )
+                +subcontainer('Mobile App Development',
+                            'Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin.',
+                            './Image(7).png',
+                            './Image(8).png',
+                            './Image(9).png',
+                            '8',
+                            'Intermediate',
+                            'David Brown',
+                            'Introduction to Mobile App Development',
+                            'Fundamentals of Swift Programming (iOS)',
+                            'Fundamentals of Kotlin Programming (Android)',
+                            'Building User Interfaces',
+                            'App Deployment and Testing'
+                            )
+                +subcontainer('Graphic Design for Beginners',
+                            'Discover the fundamentals of graphic design, including typography, color theory, layout design, and image manipulation techniques. Create visually stunning designs for print and digital media.',
+                            './Image(10).png',
+                            './Image (11).png',
+                            './Image(12).png',
+                            '10',
+                            'Beginner',
+                            'Sarah Thompson',
+                            'Introduction to Graphic Design',
+                            'Typography and Color Theory',
+                            'Layout Design and Composition',
+                            'Image Editing and Manipulation',
+                            'Designing for Print and Digital Mediag'
+                            )
+                +subcontainer('Front-End Web Development',
+                            'Become proficient in front-end web development. Learn HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React. Build interactive and responsive websites.',
+                            './Image(13).png',
+                            './Image(14).png',
+                            './Image(15).png',
+                            '10',
+                            'Intermediate',
+                            'Michael Adams',
+                            'HTML Fundamentals',
+                            'CSS Styling and Layouts',
+                            'JavaScript Basics',
+                            'Building Responsive Websites',
+                            'Introduction to Bootstrap and React'
+                            )
+        include ../../../Layout/Footer/Footer.pug
