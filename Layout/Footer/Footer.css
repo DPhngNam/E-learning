@@ -6,10 +6,9 @@
 body{
     font-family: 'Be Vietnam Pro', sans-serif;
     color: black;
-}
-.footer{
     background-color: #FFFFFF;
 }
+
 .container{
     margin: 100px 162px 30px 162px;
     display: flex;
@@ -18,8 +17,7 @@ body{
 
 .icon{
     background-color: orange;
-    width: 24px;
-    height:25px;
+    border-radius: 5px;
 }
 .copyright{
     margin-top: 50px;
