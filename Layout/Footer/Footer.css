@@ -92,6 +92,6 @@ strong {
 
 .h {
     height: 1px;
-    background-color: black;
+    background: #F1F1F3;
     width: 100%;
 }

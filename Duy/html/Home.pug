@@ -18,8 +18,15 @@ mixin course-item(No,time,level,lecturer,title,content)
             span.lecturer=lecturer
         h3=title
         p=content
-        .course-bottom-button
-            button Get it Now
+        button.course-bottom-button Get it Now
+mixin testimonial-item(content, name, No)
+    .testimonial-bottom-item
+        p= content
+        .testimonial-bottom-profile
+            .testimonial-bottom-img
+                img(src=`../Resources/images/profile (${No}).png`, alt="")
+                span.name= name
+            button.testimonial-bottom-button Read Full Story
 mixin top-tile(title,content)
     .benefits-top
         .benefits-top-content
@@ -40,6 +47,7 @@ html(lang="en")
         title Document
         link(rel="stylesheet", href="../css/home.css")
         link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="stylesheet", href="../../layout/Footer/Footer.css")
         link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
         link(href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Inter:wght@600&display=swap" rel="stylesheet")
     body
@@ -84,7 +92,7 @@ html(lang="en")
                         +benefit-item("06", "Interactive Learning Environment", "Collaborate with fellow learners, exchanging ideas and feedback to enhance your understanding.")
             section.course 
                 .course-container
-                    +top-tile("Courses", "Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.")
+                    +top-tile("Our Courses", "Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.")
                     .course-bottom
                         +course-item(0,"4 Weeks","Beginner","By John Smith","Web Design Fundamentals","Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.")
                         +course-item(1,"6 Weeks","Intermediate","By Emily Johnson","UI/UX Design","Master the art of creating intuitive user interfaces (UI) and enhancing user experiences (UX). Learn design principles, wireframing, prototyping, and usability testing techniques.")
@@ -92,5 +100,19 @@ html(lang="en")
                         +course-item(3,"10 Weeks","Beginner","By Sarah Thompson","Graphic Design for Beginners","Discover the fundamentals of graphic design, including typography, color theory, layout design, and image manipulation techniques. Create visually stunning designs for print and digital media.")
                         +course-item(4,"10 Weeks","Intermediate","By Michael Adams","Front-End Web Development","Become proficient in front-end web development. Learn HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React. Build interactive and responsive websites.")
                         +course-item(5,"6 Weeks","Advance","By Jennifer Wilson","Advanced JavaScript","Take your JavaScript skills to the next level. Explore advanced concepts like closures, prototypes, asynchronous programming, and ES6 features. Build complex applications with confidence.")
+            section.testimonial
+                .testimonial-container
+                    +top-tile("Our Testimonials", "Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.")
+                    .testimonial-bottom 
+                        +testimonial-item("The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!", "Sarah L", "0")                      
+                        +testimonial-item("The UI/UX design course exceeded my expectations. The instructor's expertise and practical assignments helped me improve my design skills. I feel more confident in my career now. Thank you!", "Jason M", "1")
+                        +testimonial-item("The mobile app development course was fantastic! The step-by-step tutorials and hands-on projects helped me grasp the concepts easily. I'm now building my own app. Great course!", "Emily R", "2")
+                        +testimonial-item("I enrolled in the graphic design course as a beginner, and it was the perfect starting point. The instructor's guidance and feedback improved my design abilities significantly. I'm grateful for this course!", "Michael K", "3")
+        include ../../Layout/Footer/Footer.pug
+                       
+
+
+
+
 
                             
