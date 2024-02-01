@@ -1,14 +1,15 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Be Vietnam Pro', sans-serif;
     color: black;
-    
 }
-.footer{
+
+.footer {
     margin-top: 100px;
     background-color: #FFF;
     width: 100%;
@@ -17,69 +18,80 @@ body{
     justify-content: center;
     flex-direction: column;
     padding: 60px 80px 20px 80px;
-    flex-direction: column;
-    gap: 30px;
+    gap: 30px; 
+    line-height: 1;
 }
-.container{
-    padding-top: 60px;
-    padding-bottom: 20px;
-    display: flex;  
-    flex-direction: row;
-    margin-bottom: 20px;
 
+.container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1278px;
     justify-content: space-between;
     align-items: flex-start;
     align-self: stretch;
-
 }
 
-.icon{
+.icon {
     background-color: orange;
     border-radius: 5px;
 }
-.copyright{
-    margin-top: 50px;
+
+.copyright {
     text-align: center;
     font-weight: 400;
 }
-.contact{
+
+.contact {
     gap: 5px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    
 }
-.contacts{
+
+.contacts {
     display: flex;
     flex-direction: column;
     gap: 20px;
     margin-top: 20px;
 }
-.subcontainerB,.subcontainerC{
+
+.subcontainerB,
+.subcontainerC {
     display: flex;
     flex-direction: column;
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
 }
-.subcontainerE{
+
+.subcontainerE {
     margin-left: auto;
-    padding-right: 10px;    
+    padding-right: 10px;
     display: flex;
     justify-content: flex-end;
-    flex-grow: 1;
     gap: 24px;
-    flex-shrink: 1;
+    flex-grow: 1;
+    flex-shrink: 1; /* Removed duplicate flex-shrink: 1; */
 }
-.subcontainerA{
+
+.subcontainerA {
     margin-left: 10px;
-    margin-right: auto ;
+    margin-right: auto;
 }
-.imgs{
+
+.imgs {
     display: flex;
     gap: 5px;
 }
-strong{
+
+strong {
     font-weight: bold;
+}
+
+.h {
+    height: 1px;
+    background-color: black;
+    width: 100%;
 }
