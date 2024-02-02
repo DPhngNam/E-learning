@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Absolute-White: #FFF;
+    --White-97: #F7F7F8;
+}
+
+body {
+    background-color: var(--White-97);
+    font-family: "Be Vietnam Pro";
+    font-style: normal;
+    line-height: 150%;
+}
+
+.containerA {
+    margin: 0 auto;
+    display: flex;
+    gap: 80px;
+    background-color: var(--White-97);
+    margin-bottom: 80px;
+    padding: 0 60px 40px 60px;
+    margin-left: 20px;
+}
+
+.header {
+    display: flex;
+
+    align-items: center;
+    flex: 1 0 0;
+}
+
+h1 {
+    color: var(--Grey-15, #262626);
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 150%;
+    /* 57px */
+
+
+}
+
+p {
+    color: var(--Grey-35, #59595A);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    /* 24px */
+    flex: 1 0 0;
+}
+
+.contact-section {
+    margin: 100px 162px 0 162px;
+    border-radius: 12px;
+    background-color: #FFF;
+    justify-content: space-between;
+}
+
+.buttons-container,
+.contact-section,
+.form,
+.contacts-main {
+    display: flex;
+}
+
+.buttons-container,
+.form {
+    padding: 80px;
+    
+}
+
+.form {
+    flex-direction: column;
+    flex: 1 0 0 ;
+    gap: 50px;
+}
+
+.form-elements {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.hd {}
+
+.text-input {}
+
+.mess {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.buttons-container {
+    flex-direction: column;
+}
+
+.contacts-main {
+    flex-direction: column;
+    gap: 50px;
+    
+}
+
+.contact-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid var(--White-95, #F1F1F3);
+    background: var(--White-99, #FCFCFD);
+}
+
+.sub {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 0 ;
+    gap: 16px;
+}
+
+.imgs {}
+
+button {
+    border: 1px solid var(--White-95, #F1F1F3);
+    background: var(--White-97, #F7F7F8);
+}
+
+input {
+    border-radius: 8px;
+    border: 1px solid var(--White-95, #F1F1F3);
+    background: var(--White-99, #FCFCFD);
+    padding: 24px 20px;
+    width: 100%;
+}
+.text-input{
+    position: relative;
+}
+/* Style the placeholder text */
+.text-input::placeholder,.special-input::placeholder {
+    color: var(--Grey-40, #656567);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.special-input::placeholder{
+    padding: 24px 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.send{
+    border-radius: 10px;
+    background: var(--Orange-50, #FF9500);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 18px 24px;
+}
+
+.special{
+    height: 170px;
+}
