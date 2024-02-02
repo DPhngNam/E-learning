@@ -35,10 +35,6 @@ mixin top-tile(title,content)
         .benefits-top-view 
             button View All
 
-
-
-
-
 doctype html
 html(lang="en")
     head
@@ -108,6 +104,90 @@ html(lang="en")
                         +testimonial-item("The UI/UX design course exceeded my expectations. The instructor's expertise and practical assignments helped me improve my design skills. I feel more confident in my career now. Thank you!", "Jason M", "1")
                         +testimonial-item("The mobile app development course was fantastic! The step-by-step tutorials and hands-on projects helped me grasp the concepts easily. I'm now building my own app. Great course!", "Emily R", "2")
                         +testimonial-item("I enrolled in the graphic design course as a beginner, and it was the perfect starting point. The instructor's guidance and feedback improved my design abilities significantly. I'm grateful for this course!", "Michael K", "3")
+            section.pricing
+                .pricing-container
+                    .pricing-top
+                        .pricing-top-content
+                            h2 Our Pricing 
+                            p Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.
+                        .pricing-top-view 
+                            input(type="radio",name='view',id="Month",checked)
+                            label.Month(for="Month") Monthly
+                            input(type="radio",name='view',id="Year")
+                            label.Year(for="Year") Yearly
+                    .pricing-bottom
+                        .pricing-bottom-item 
+                            h3.pricing-bottom-title Free Plan
+                            h2.money $0
+                            .pricing-bottom-feature
+                                ul
+                                    h3 Available Features                            
+                                    li 
+                                        svg.tick(xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewbox='0 0 16 16' fill='none')
+                                            path(fill-rule='evenodd' clip-rule='evenodd' d='M13.364 3.32297C13.6276 3.52379 13.6785 3.90027 13.4777 4.16385L7.07765 12.5639C6.97272 12.7016 6.81341 12.7873 6.64066 12.7989C6.46791 12.8105 6.29856 12.7469 6.17613 12.6245L2.57613 9.02449C2.34181 8.79018 2.34181 8.41028 2.57613 8.17596C2.81044 7.94165 3.19034 7.94165 3.42465 8.17596L6.5392 11.2905L12.5231 3.4366C12.724 3.17302 13.1004 3.12214 13.364 3.32297Z' fill='#262626')
+                                        span Access to selected free courses.
+                                        
+                                    li 
+                                        svg.tick(xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewbox='0 0 16 16' fill='none')
+                                            path(fill-rule='evenodd' clip-rule='evenodd' d='M13.364 3.32297C13.6276 3.52379 13.6785 3.90027 13.4777 4.16385L7.07765 12.5639C6.97272 12.7016 6.81341 12.7873 6.64066 12.7989C6.46791 12.8105 6.29856 12.7469 6.17613 12.6245L2.57613 9.02449C2.34181 8.79018 2.34181 8.41028 2.57613 8.17596C2.81044 7.94165 3.19034 7.94165 3.42465 8.17596L6.5392 11.2905L12.5231 3.4366C12.724 3.17302 13.1004 3.12214 13.364 3.32297Z' fill='#262626')
+                                        span Limited course materials and resources.
+                                    li 
+                                        svg.tick(xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewbox='0 0 16 16' fill='none')
+                                            path(fill-rule='evenodd' clip-rule='evenodd' d='M13.364 3.32297C13.6276 3.52379 13.6785 3.90027 13.4777 4.16385L7.07765 12.5639C6.97272 12.7016 6.81341 12.7873 6.64066 12.7989C6.46791 12.8105 6.29856 12.7469 6.17613 12.6245L2.57613 9.02449C2.34181 8.79018 2.34181 8.41028 2.57613 8.17596C2.81044 7.94165 3.19034 7.94165 3.42465 8.17596L6.5392 11.2905L12.5231 3.4366C12.724 3.17302 13.1004 3.12214 13.364 3.32297Z' fill='#262626')
+                                        span Basic community support.
+                                    li
+                                        svg.tick(xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewbox='0 0 16 16' fill='none')
+                                            path(fill-rule='evenodd' clip-rule='evenodd' d='M13.364 3.32297C13.6276 3.52379 13.6785 3.90027 13.4777 4.16385L7.07765 12.5639C6.97272 12.7016 6.81341 12.7873 6.64066 12.7989C6.46791 12.8105 6.29856 12.7469 6.17613 12.6245L2.57613 9.02449C2.34181 8.79018 2.34181 8.41028 2.57613 8.17596C2.81044 7.94165 3.19034 7.94165 3.42465 8.17596L6.5392 11.2905L12.5231 3.4366C12.724 3.17302 13.1004 3.12214 13.364 3.32297Z' fill='#262626')
+                                        span No certification upon completion.
+                                    li    
+                                        svg.tick(xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewbox='0 0 16 16' fill='none')
+                                            path(fill-rule='evenodd' clip-rule='evenodd' d='M13.364 3.32297C13.6276 3.52379 13.6785 3.90027 13.4777 4.16385L7.07765 12.5639C6.97272 12.7016 6.81341 12.7873 6.64066 12.7989C6.46791 12.8105 6.29856 12.7469 6.17613 12.6245L2.57613 9.02449C2.34181 8.79018 2.34181 8.41028 2.57613 8.17596C2.81044 7.94165 3.19034 7.94165 3.42465 8.17596L6.5392 11.2905L12.5231 3.4366C12.724 3.17302 13.1004 3.12214 13.364 3.32297Z' fill='#262626')
+                                        span Ad-supported platform.
+                                    li
+                                        svg.cross(xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewbox='0 0 16 16' fill='none')
+                                            path(d='M5.02426 4.17574C4.78995 3.94142 4.41005 3.94142 4.17574 4.17574C3.94142 4.41005 3.94142 4.78995 4.17574 5.02426L7.15147 8L4.17574 10.9757C3.94142 11.2101 3.94142 11.59 4.17574 11.8243C4.41005 12.0586 4.78995 12.0586 5.02426 11.8243L8 8.84853L10.9757 11.8243C11.2101 12.0586 11.59 12.0586 11.8243 11.8243C12.0586 11.59 12.0586 11.2101 11.8243 10.9757L8.84853 8L11.8243 5.02426C12.0586 4.78995 12.0586 4.41005 11.8243 4.17574C11.59 3.94142 11.2101 3.94142 10.9757 4.17574L8 7.15147L5.02426 4.17574Z' fill='#262626')
+                                        span Access to exclusive Pro Plan community forums.
+                                    li 
+                                        svg.cross(xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewbox='0 0 16 16' fill='none')
+                                            path(d='M5.02426 4.17574C4.78995 3.94142 4.41005 3.94142 4.17574 4.17574C3.94142 4.41005 3.94142 4.78995 4.17574 5.02426L7.15147 8L4.17574 10.9757C3.94142 11.2101 3.94142 11.59 4.17574 11.8243C4.41005 12.0586 4.78995 12.0586 5.02426 11.8243L8 8.84853L10.9757 11.8243C11.2101 12.0586 11.59 12.0586 11.8243 11.8243C12.0586 11.59 12.0586 11.2101 11.8243 10.9757L8.84853 8L11.8243 5.02426C12.0586 4.78995 12.0586 4.41005 11.8243 4.17574C11.59 3.94142 11.2101 3.94142 10.9757 4.17574L8 7.15147L5.02426 4.17574Z' fill='#262626')
+                                        span Early access to new courses and updates.     
+                            button.pricing-bottom-button Get Started
+                        .pricing-bottom-item 
+                            h3.pricing-bottom-title Pro Plan
+                            h2.money $79
+                            .pricing-bottom-feature
+                                ul
+                                    h3 Available Features                            
+                                    li 
+                                        svg.tick(xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewbox='0 0 16 16' fill='none')
+                                            path(fill-rule='evenodd' clip-rule='evenodd' d='M13.364 3.32297C13.6276 3.52379 13.6785 3.90027 13.4777 4.16385L7.07765 12.5639C6.97272 12.7016 6.81341 12.7873 6.64066 12.7989C6.46791 12.8105 6.29856 12.7469 6.17613 12.6245L2.57613 9.02449C2.34181 8.79018 2.34181 8.41028 2.57613 8.17596C2.81044 7.94165 3.19034 7.94165 3.42465 8.17596L6.5392 11.2905L12.5231 3.4366C12.724 3.17302 13.1004 3.12214 13.364 3.32297Z' fill='#262626')
+                                        span Unlimited access to all courses.
+                                        
+                                    li 
+                                        svg.tick(xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewbox='0 0 16 16' fill='none')
+                                            path(fill-rule='evenodd' clip-rule='evenodd' d='M13.364 3.32297C13.6276 3.52379 13.6785 3.90027 13.4777 4.16385L7.07765 12.5639C6.97272 12.7016 6.81341 12.7873 6.64066 12.7989C6.46791 12.8105 6.29856 12.7469 6.17613 12.6245L2.57613 9.02449C2.34181 8.79018 2.34181 8.41028 2.57613 8.17596C2.81044 7.94165 3.19034 7.94165 3.42465 8.17596L6.5392 11.2905L12.5231 3.4366C12.724 3.17302 13.1004 3.12214 13.364 3.32297Z' fill='#262626')
+                                        span Unlimited course materials and resources.
+                                    li 
+                                        svg.tick(xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewbox='0 0 16 16' fill='none')
+                                            path(fill-rule='evenodd' clip-rule='evenodd' d='M13.364 3.32297C13.6276 3.52379 13.6785 3.90027 13.4777 4.16385L7.07765 12.5639C6.97272 12.7016 6.81341 12.7873 6.64066 12.7989C6.46791 12.8105 6.29856 12.7469 6.17613 12.6245L2.57613 9.02449C2.34181 8.79018 2.34181 8.41028 2.57613 8.17596C2.81044 7.94165 3.19034 7.94165 3.42465 8.17596L6.5392 11.2905L12.5231 3.4366C12.724 3.17302 13.1004 3.12214 13.364 3.32297Z' fill='#262626')
+                                        span Priority support from instructors.
+                                    li
+                                        svg.tick(xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewbox='0 0 16 16' fill='none')
+                                            path(fill-rule='evenodd' clip-rule='evenodd' d='M13.364 3.32297C13.6276 3.52379 13.6785 3.90027 13.4777 4.16385L7.07765 12.5639C6.97272 12.7016 6.81341 12.7873 6.64066 12.7989C6.46791 12.8105 6.29856 12.7469 6.17613 12.6245L2.57613 9.02449C2.34181 8.79018 2.34181 8.41028 2.57613 8.17596C2.81044 7.94165 3.19034 7.94165 3.42465 8.17596L6.5392 11.2905L12.5231 3.4366C12.724 3.17302 13.1004 3.12214 13.364 3.32297Z' fill='#262626')
+                                        span Course completion certificates.
+                                    li    
+                                        svg.tick(xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewbox='0 0 16 16' fill='none')
+                                            path(fill-rule='evenodd' clip-rule='evenodd' d='M13.364 3.32297C13.6276 3.52379 13.6785 3.90027 13.4777 4.16385L7.07765 12.5639C6.97272 12.7016 6.81341 12.7873 6.64066 12.7989C6.46791 12.8105 6.29856 12.7469 6.17613 12.6245L2.57613 9.02449C2.34181 8.79018 2.34181 8.41028 2.57613 8.17596C2.81044 7.94165 3.19034 7.94165 3.42465 8.17596L6.5392 11.2905L12.5231 3.4366C12.724 3.17302 13.1004 3.12214 13.364 3.32297Z' fill='#262626')
+                                        span Ad-free experience.
+                                    li
+                                        svg.tick(xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewbox='0 0 16 16' fill='none')
+                                            path(fill-rule='evenodd' clip-rule='evenodd' d='M13.364 3.32297C13.6276 3.52379 13.6785 3.90027 13.4777 4.16385L7.07765 12.5639C6.97272 12.7016 6.81341 12.7873 6.64066 12.7989C6.46791 12.8105 6.29856 12.7469 6.17613 12.6245L2.57613 9.02449C2.34181 8.79018 2.34181 8.41028 2.57613 8.17596C2.81044 7.94165 3.19034 7.94165 3.42465 8.17596L6.5392 11.2905L12.5231 3.4366C12.724 3.17302 13.1004 3.12214 13.364 3.32297Z' fill='#262626')
+                                        span Access to exclusive Pro Plan community forums.
+                                    li 
+                                        svg.tick(xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewbox='0 0 16 16' fill='none')
+                                            path(fill-rule='evenodd' clip-rule='evenodd' d='M13.364 3.32297C13.6276 3.52379 13.6785 3.90027 13.4777 4.16385L7.07765 12.5639C6.97272 12.7016 6.81341 12.7873 6.64066 12.7989C6.46791 12.8105 6.29856 12.7469 6.17613 12.6245L2.57613 9.02449C2.34181 8.79018 2.34181 8.41028 2.57613 8.17596C2.81044 7.94165 3.19034 7.94165 3.42465 8.17596L6.5392 11.2905L12.5231 3.4366C12.724 3.17302 13.1004 3.12214 13.364 3.32297Z' fill='#262626')
+                                        span Early access to new courses and updates.     
+                            button.pricing-bottom-button Get Started
         include ../../Layout/Footer/Footer.pug
                        
 
