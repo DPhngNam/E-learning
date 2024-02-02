@@ -1,18 +1,23 @@
 mixin subcontainer(hd,pa,imgSrc1,imgSrc2,imgSrc3,time,level,author, lesson1, lesson2, lesson3, lesson4, lesson5)
-    .head 
-        span.heading= hd
-        p.pa=pa
-        
-    .body 
+    .top 
+        .head 
+            .head-left 
+                span.heading= hd
+                p.pa=pa
+            .head-right 
+                button View course
         .image-container  
             .imgs
                 img(src=imgSrc1, alt="pic")
                 img(src=imgSrc2, alt="pic")
                 img(src=imgSrc3, alt="pic")
-            .details 
+        .details 
+            .details-left 
                 span.time=`${time} Weeks`
                 span.level=level 
+            .details-right 
                 span.author=`By ${author}`
+    .bot 
         .Curri 
             span.Curr-details Curriculum
             .paths 

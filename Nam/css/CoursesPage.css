@@ -2,9 +2,157 @@
     --Absolute-White: #FFF;
     --White-97: #F7F7F8;
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     background-color: var(--White-97);
+    font-family: "Be Vietnam Pro";
+    font-style: normal;
+}
+.subct{
+    background-color: var(--Absolute-White);
+    padding: 40px;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.containerA{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    background-color: var(--White-97);
+    margin-bottom: 80px;
+    padding: 0 60px 40px 60px ;
+}
+h1{
+    color: var(--Grey-15, #262626);
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 150%; /* 57px */
+}
+p{
+    color: var(--Grey-35, #59595A);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
 }
 .containerB{
-    background-color: var(--Absolute-White);
+    margin: 0 80px 100px 80px;
+    
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.head,.headleft{
+    display: flex;
+    flex-direction: row;
+}
+.head{
+    gap: 50px;
+
+}
+.headleft{
+    margin-right: auto;
+    margin-left: 0;
+}
+.heading{
+    color: var(--Grey-15, #262626);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%; /* 30px */
+}
+.pa{
+    align-self: stretch;
+    color: var(--Grey-35, #59595A);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+.head-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    padding: 14px 16px;
+    border-radius: 6px;
+    border: 1px solid var(--White-95, #F1F1F3);
+    background: var(--White-99, #FCFCFD);
+    font-size: 14px;
+    width: max-content;
+}
+.imgs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+
+}
+.top{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.details-left{
+    display: flex;
+    gap: 8px;
+}
+.author{
+    font-size: 18px;
+    font-weight: 500;
+}
+.time,.level{
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 1px solid var(--White-95, #F1F1F3);
+    background: var(--Absolute-White, #FFF);
+    padding: 12px;
+}
+
+.Curri{
+    border: 1px solid var(--White-95, #F1F1F3);
+}
+.Curr-details{
+    display: flex;
+    padding: 20px 24px;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--White-95, #F1F1F3);
+}
+.paths{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.path{
+    display: flex;
+    border-left: 1px solid var(--White-95, #F1F1F3);
+    gap: 16px;
+    padding: 24px 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.Number{
+    color: var(--Grey-15, #262626);
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 150%; /* 60px */
+}
+.lesson{
+    color: var(--Grey-20, #333);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%; /* 24px */
 }
