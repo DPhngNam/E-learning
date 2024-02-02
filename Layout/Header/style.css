@@ -33,22 +33,18 @@ button {
 }
 
 body {
-  min-height: 100vh;
+  font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1;
+  line-height: 150%;
+  font-size: 14px;
+  background-color: #F7F7F8;
 }
 
 .Header {
-  font-family: "Be Vietnam Pro", sans-serif;
-  font-weight: 400;
-  margin-bottom: 100px;
-  line-height: 150%;
-  font-size: 14px;
+  margin-bottom: 80px;
 }
 .Header-container {
-  max-width: 1400px;
-  margin: 20px auto 0 auto;
+  margin: 20px 20px 0 20px;
 }
 .Header-banner {
   display: flex;
@@ -65,10 +61,11 @@ body {
   color: white;
 }
 .Header-content {
-  padding: 16px 50px;
+  padding: 16px 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #F1F1F3;
 }
 .Header-navigator {
   border-radius: 8px;
