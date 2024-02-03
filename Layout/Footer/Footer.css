@@ -10,26 +10,17 @@ body {
 }
 
 .footer {
+    width: 100%;
     margin-top: 100px;
     background-color: #FFF;
-    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
     padding: 60px 80px 20px 80px;
-    gap: 30px; 
+    gap: 50px;
     line-height: 1;
 }
 
-.container {
-    display: flex;
-    flex-direction: row;
-    max-width: 1278px;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-self: stretch;
-}
+
 
 .icon {
     background-color: orange;
@@ -42,9 +33,8 @@ body {
 }
 
 .contact {
-    gap: 5px;
     display: flex;
-    flex-direction: row;
+    gap: 5px;
     align-items: center;
 }
 
@@ -55,31 +45,8 @@ body {
     margin-top: 20px;
 }
 
-.subcontainerB,
-.subcontainerC {
-    display: flex;
-    flex-direction: column;
-}
 
-a {
-    text-decoration: none;
-    color: black;
-}
 
-.subcontainerE {
-    margin-left: auto;
-    padding-right: 10px;
-    display: flex;
-    justify-content: flex-end;
-    gap: 24px;
-    flex-grow: 1;
-    flex-shrink: 1; /* Removed duplicate flex-shrink: 1; */
-}
-
-.subcontainerA {
-    margin-left: 10px;
-    margin-right: auto;
-}
 
 .imgs {
     display: flex;
@@ -94,4 +61,42 @@ strong {
     height: 1px;
     background: #F1F1F3;
     width: 100%;
+}
+
+
+.container {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.subcontainerE {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    width: 737px;
+}
+
+.subcontainerA {
+    max-width: 304px;
+    width: 100%;
+    
+}
+
+.subcontainerB,
+.subcontainerC,
+.subcontainerD{
+
+}
+.subcontainerB,
+.subcontainerC {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
