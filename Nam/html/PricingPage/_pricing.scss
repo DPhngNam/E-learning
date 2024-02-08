@@ -1,7 +1,45 @@
 @use "../../../reset.scss";
 
 .mainbody{
-    background-color: #FFF;
-    margin: 0px 80px;
-    padding: 80px;
+    &-header{
+        margin: 0 20px;
+        padding: 0px 60px 14px;
+        border-bottom: 1px solid var(--White-90, #E4E4E7);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        width: 1400px;
+        height: fit-content;
+        &-deatail{
+            color: var(--Grey-35, #59595A);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            flex: 1 0 0;
+
+        }
+        &-heading{
+            display: flex;
+            align-items: center;
+
+            &-context{
+                color: var(--Grey-15, #262626);
+                font-size: 38px;
+                font-style: normal;
+                font-weight: 600;
+            }
+        }
+    }
+    &-frame{
+        margin: 0px 80px;
+
+        border-radius: 12px;
+        background: var(--Absolute-White, #FFF);
+    }
+    &-faq{
+        margin: 0px 80px;
+        padding: 80px;
+        border-radius: 12px;
+        background: var(--Absolute-White, #FFF);
+    }
 }
