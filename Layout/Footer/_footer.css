@@ -89,6 +89,8 @@ body {
 .footer-copyright {
   text-align: center;
   font-weight: 400;
+  color: var(--Grey-40, #656567);
+  font-style: normal;
 }
 
 .icon {
@@ -111,10 +113,24 @@ a {
   flex-direction: column;
   margin-top: 10px;
   gap: 8px;
+  color: var(--Grey-35, #59595A);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
 }
 
-strong {
-  font-weight: bold;
+.details {
+  color: var(--Grey-15, #262626);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.information {
+  color: var(--Grey-15, #262626);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .buttn {
