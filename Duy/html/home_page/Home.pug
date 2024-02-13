@@ -10,7 +10,7 @@ mixin benefit-item(number, title, content)
                     path(fill-rule='evenodd' clip-rule='evenodd' d='M6.78557 19.2144C7.16633 19.5952 7.78367 19.5952 8.16443 19.2144L17.55 9.82886V17.225C17.55 17.7635 17.9865 18.2 18.525 18.2C19.0635 18.2 19.5 17.7635 19.5 17.225V7.475C19.5 6.93652 19.0635 6.5 18.525 6.5H8.775C8.23652 6.5 7.8 6.93652 7.8 7.475C7.8 8.01348 8.23652 8.45 8.775 8.45H16.1711L6.78557 17.8356C6.40481 18.2163 6.40481 18.8337 6.78557 19.2144Z' fill='#FF9500')
 mixin course-item(No,time,level,lecturer,title,content)
     .course-bottom-item 
-        img(src=`../Resources/images/course (${No}).png`, alt="")
+        img(src=`./images/course (${No}).png`, alt="")
         .course-bottom-container 
             .course-bottom-time 
                 span=time
@@ -24,7 +24,7 @@ mixin testimonial-item(content, name, No)
         p= content
         .testimonial-bottom-profile
             .testimonial-bottom-img
-                img(src=`../Resources/images/profile (${No}).png`, alt="")
+                img(src=`./images/profile (${No}).png`, alt="")
                 span.name= name
             button.testimonial-bottom-button Read Full Story
 mixin top-tile(title,content)
@@ -41,13 +41,12 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Document
-        link(rel="stylesheet", href="../css/home.css")
+        link(rel="stylesheet", href="../../css/home_page/home.css")
         link(rel="preconnect" href="https://fonts.googleapis.com")
-        link(rel="stylesheet", href="../../layout/Footer/Footer.css")
         link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
         link(href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Inter:wght@600&display=swap" rel="stylesheet")
     body
-        include ../../Layout/Header/Header.pug
+        include ../../../Layout/Header/Header.pug
         main
             section.Hero 
                 .Hero-container 
@@ -71,11 +70,11 @@ html(lang="en")
                     - var n = 0;
                     while n < 7
                         a(href="#").brand-logo 
-                            img(src=`../Resources/images/logo (${n}).png`, alt="")
+                            img(src=`./images/logo (${n}).png`, alt="")
                         - n++;
             section.main-img 
                 .main-img-container
-                    img(src="../Resources/images/Container.png", alt="")    
+                    img(src="./images/Container.png", alt="")    
             section.benefits
                 .benefits-container
                     +top-tile("Benefits", "Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.")
@@ -188,7 +187,20 @@ html(lang="en")
                                             path(fill-rule='evenodd' clip-rule='evenodd' d='M13.364 3.32297C13.6276 3.52379 13.6785 3.90027 13.4777 4.16385L7.07765 12.5639C6.97272 12.7016 6.81341 12.7873 6.64066 12.7989C6.46791 12.8105 6.29856 12.7469 6.17613 12.6245L2.57613 9.02449C2.34181 8.79018 2.34181 8.41028 2.57613 8.17596C2.81044 7.94165 3.19034 7.94165 3.42465 8.17596L6.5392 11.2905L12.5231 3.4366C12.724 3.17302 13.1004 3.12214 13.364 3.32297Z' fill='#262626')
                                         span Early access to new courses and updates.     
                             button.pricing-bottom-button Get Started
-        include ../../Layout/Footer/Footer.pug
+            section.faq
+                .faq-container 
+                    .faq-question
+                        h2 Frequently Asked Questions
+                        p Still you have any questions? Contact our Team via support@skillbridge.com
+                        button See All FAQ’s
+                    .faq-detail 
+                        each val in ['Can I enroll in multiple courses at once?','What kind of support can I expect from instructors?','Are the courses self-paced or do they have specific start and end dates?','Are there any prerequisites for the courses?','Can I download the course materials for offline access?']
+                            .faq-detail-item 
+                                span= val
+                                button 
+                                    svg(xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewbox='0 0 24 24' fill='none')
+                                        path(d='M6 12H12M18 12H12M12 12V6M12 12V18' stroke='#262626' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+        include ../../../Layout/Footer/Footer.pug
                        
 
 

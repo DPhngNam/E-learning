@@ -1,4 +1,5 @@
-@use "../../Layout/Header/Header_style.scss";
+@use "../../../Layout/Header/Header_style.scss";
+@use "../../../Layout/Footer/_footer.scss";
 main{
     margin: 0px 80px;
 }
@@ -525,6 +526,74 @@ button:hover{
             font-weight: 600;
             color:  white;
             font-size: 14px;
+        }
+    }
+}
+
+.faq{
+    color: #262626;
+    font-size: 18px;
+    background-color: white;
+    border-radius: 12px;
+    &-container{
+        gap: 80px;
+        margin-bottom: 100px;
+        padding: 80px;
+        display: flex;
+        align-items: flex-start;
+    }
+    &-question{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: stretch;
+        flex: 1;
+        & h2{
+            font-size: 38px;
+            font-weight: 600;
+            line-height: 120%;
+            margin-bottom: 8px;
+        }
+        & p{
+            color: #333;
+            font-size: 16px;
+            margin-bottom: 40px;
+        }
+        & button{
+            font-size: 14px;
+            padding: 14px 20px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 6px;
+            border: 1px solid var(--White-95, #F1F1F3);
+        }
+    }
+    &-detail{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        &-item{
+            padding: 24px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            border-radius: 10px;
+            border: 1px solid var(--White-95, #F1F1F3);
+            & span{
+                display: flex;
+                flex: 1;
+                align-items: flex-start;
+            }
+            & button{
+                display: flex;
+                justify-content: stretch;
+                align-items: center;
+                padding: 10px;
+                border-radius: 6px;
+                background: var(--Orange-95, #FFF4E5);
+            }
         }
     }
 }
