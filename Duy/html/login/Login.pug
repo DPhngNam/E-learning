@@ -1,0 +1,56 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        script(src="https://kit.fontawesome.com/8c27315e86.js")
+        link(rel="stylesheet", href="../../css/login/Login.css")
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous")
+        link(href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Inter:wght@600&display=swap" rel="stylesheet")
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap' rel='stylesheet')
+    body
+        include ../../../Layout/Header/Header.pug
+        main
+            section.container 
+                .container__info
+                    h3 Students Testimonials
+                    p.testimonial Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.
+                    p.desc The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!
+                    .teacher
+                        .profile
+                            img(src="./images/teacher.png", alt="")
+                            span.name Sarah L
+                        button.btn Read Full Story
+                    .arrow_btn 
+                        button.arrow_btn--left
+                            i.fa-solid.fa-arrow-left
+                        button.arrow_btn--right
+                            i.fa-solid.fa-arrow-right
+                form.container__form
+                    h3.tile Login
+                    span.intro Welcome back! Please log in to access your account.
+                    label(for="Email")  Email
+                    input.email(type="text", name="Email", id="Email", placeholder="Enter your Email")
+                    label(for="Password")  Password
+                    input.pass(type="password", name="Password", id="Password", placeholder="Enter your Password")
+                    span.forgot Forgot your password?
+                    .remember
+                        input(type="checkbox", name="Remember", id="Remember")
+                        label.checkbox(for="Remember")
+                            i.fa-solid.fa-check
+                        label(for="Remember") Remember me
+                    button.log--default Login
+                    .line
+                        span OR
+                    button.log--google 
+                        img(src="./images/google_icon.svg", alt="")
+                        span Login with Google
+                    .sign 
+                        span Don't have an account?
+                        a(href="#") Sign up
+                        i.fa-solid.fa-arrow-up-right-from-square
+        include ../../../Layout/Footer/Footer.pug
