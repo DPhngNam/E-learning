@@ -15,9 +15,13 @@
         align-items: stretch;
         gap:23px;
         padding: 10px 0px;
-        & .title{
-            display: inline-block;
+        // pointer-events: none;
+        & > .title{
+            display: block;
             color: white;
+        }
+        & > *{
+            cursor: pointer;
         }
     }
     &-content{
