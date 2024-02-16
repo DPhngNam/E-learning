@@ -1,0 +1,39 @@
+mixin content(head_title, head_desc,body)
+    section.Content
+        .title 
+            h3=head_title
+            span=head_desc
+        .container
+            each val in body
+                .container__item
+                    img(src=`./images/${val[0]}.svg`, alt="")
+                    h4=val[1]
+                    p=val[2]
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        script(src="https://kit.fontawesome.com/8c27315e86.js")
+        link(rel="stylesheet", href="../../css/aboutus/AboutUs.css")
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous")
+        link(href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Inter:wght@600&display=swap" rel="stylesheet")
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap' rel='stylesheet')
+    body
+        include ../../../Layout/Header/Header.pug
+        main
+            section.About
+                h2.title About Skillbridge
+                p Welcome to our platform, where we are passionate about empowering individuals to master the world of design and development. We offer a wide range of online courses designed to equip learners with the skills and knowledge needed to succeed in the ever-evolving digital landscape.
+            each val in [["Achievements","Our commitment to excellence has led us to achieve significant milestones along our journey. Here are some of our notable achievements",[["crown","Trusted by Thousands","We have successfully served thousands of students, helping them unlock their potential and achieve their career goals."],["medal","Award-Winning Courses","Our courses have received recognition and accolades in the industry for their quality, depth of content, and effective teaching methodologies."],["shield","Positive Student Feedback","We take pride in the positive feedback we receive from our students, who appreciate the practicality and relevance of our course materials."],["theatermasks","Industry Partnerships","We have established strong partnerships with industry leaders, enabling us to provide our students with access to the latest tools and technologies"]]],["Our Goals","At SkillBridge, our goal is to empower individuals from all backgrounds to thrive in the world of design and development. We believe that education should be accessible and transformative, enabling learners to pursue their passions and make a meaningful impact.",[["backpack","Provide Practical Skills","We focus on delivering practical skills that are relevant to the current industry demands. Our courses are designed to equip learners with the knowledge and tools needed to excel in their chosen field."],["book","Foster Creative Problem-Solving","We encourage creative thinking and problem-solving abilities, allowing our students to tackle real-world challenges with confidence and innovation."],["puzzle","Promote Collaboration and Community","We believe in the power of collaboration and peer learning. Our platform fosters a supportive and inclusive community where learners can connect, share insights, and grow together."],["light","Stay Ahead of the Curve","The digital landscape is constantly evolving, and we strive to stay at the forefront of industry trends. We regularly update our course content to ensure our students receive the latest knowledge and skills."]]]]
+                +content(val[0], val[1], val[2])
+            section.banner 
+                .title 
+                    h2 , let's shape the future of digital innovation
+                    img(src="./images/logo.svg", alt="")
+                button.btn Join Now
+        include ../../../Layout/Footer/Footer.pug

@@ -1,0 +1,153 @@
+@use "../../../Layout/Header/Header_style.scss";
+@use "../../../Layout/Footer/_footer.scss";
+button:hover{
+    filter: brightness(0.8);
+}
+main{
+    margin: 0px 80px;
+}
+.About{
+    margin: 0px -60px;
+    padding: 0px 60px 40px 60px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--White-90, #E4E4E7);
+    gap: 80px;
+    margin-bottom: 80px;
+    & .title{
+        width: 100%;
+        font-size: 38px;
+        font-weight: 600;
+        color: var(--Grey-15, #262626);
+    }
+    & p{
+        width: 100%;
+        font-size: 16px;
+        color: var(--Grey-35, #59595A);
+        line-height: 150%;
+    }
+}
+.Content{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    flex: 1;
+    margin-bottom: 100px;
+    & .title{
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        & h3{
+            color: var(--Grey-20, #333);
+            width: 100%;
+            line-height: 150%;
+            font-size: 30px;
+            font-weight: 500;
+        }
+        & span{
+            color: var(--Grey-35, #59595A);
+            font-size: 16px;
+            line-height: 150%;
+        }
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        &__item{
+            display: flex;
+            flex-direction: column;
+            flex:1; 
+            align-items: flex-start;
+            padding: 40px;
+            background-color: white;
+            border-radius: 10px;
+            & img{
+                width: 60px;
+                height: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 14px;
+                border-radius: 6px;
+                border: 1px solid var(--Orange-90, #FFEACC);
+                background: var(--Orange-97, #FFF9F0);
+                margin-bottom: 24px;
+            }
+            & h4{
+                color: var(--Grey-15, #262626);
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 150%;
+                margin-bottom: 10px;
+            }
+            & p{
+                color: var(--Grey-35, #59595A);
+                font-size: 16px;
+                line-height: 150%;
+            }
+        }
+    }
+}
+.Content:last-child > .title >span::after{
+    content: "Through our carefully crafted courses, we aim to";
+    display: block;
+}
+.banner{
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    padding: 60px;
+    height: 250px;
+    margin-top: -40px;
+    margin-bottom: 100px;
+    gap: 300px;
+    border-radius: 10px;
+    background: var(--Absolute-White, #FFF);
+    & .title{
+        display: flex;
+        position: relative;
+        & h2{
+            position: relative;
+            top: 60px;
+            color: var(--Grey-15, #262626);
+            font-size: 38px;
+            font-weight: 600;
+            line-height: 120%;
+            &::before{
+                content: "Together";
+                color: var(--Orange-50, #FF9500);
+            }
+            &::after{
+                content: "Join us on this exciting learning journey and unlock your potential in design and development.";
+                display: block;
+                color: var(--Grey-30, #4C4C4D);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 150%;
+                margin-top: 14px;
+                white-space: nowrap;
+            }
+        }
+        // & img{
+        //     position: relative;
+        //     top: -90px;
+        //     width: 361.563px;
+        //     height: 361.563px;
+        // }
+    }
+    & .btn{
+        display: flex;
+        padding: 14px 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border-radius: 6px;
+        background: var(--Orange-50, #FF9500);
+        color: var(--Absolute-White, #FFF);
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 150%;
+        white-space: nowrap; /* 21px */
+    }
+}
