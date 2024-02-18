@@ -22,11 +22,11 @@ html(lang="en")
         link(rel="preconnect" href="https://fonts.googleapis.com")
         link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
         link(href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet")
-        link(rel="stylesheet", href="../../../Layout/Footer/Footer.css")
-        link(rel="stylesheet", href="../../../Layout/Header/style.css")
-        link(rel="stylesheet", href="../../css/CoursesOpenPage.css")
+        link(rel="stylesheet", href="../../Layout/Footer/_footer.css")
+        link(rel="stylesheet", href="../../Layout/Header/style.css")
+        link(rel="stylesheet", href="../../css/coursesOpenPage/CoursesOpenPage.css")
     body 
-        include ../../../Layout/Header/Header.pug
+        include ../../Layout/Header/Header.pug
         main 
             section.containerA 
                 .header 
@@ -37,7 +37,7 @@ html(lang="en")
                     svg.ic(xmlns="http://www.w3.org/2000/svg", width="34", height="35", viewBox="0 0 34 35", fill="none")
                         path(d="M10.7107 5.329C9.01265 4.25849 6.80078 5.47878 6.80078 7.48611V27.5141C6.80078 29.5214 9.01265 30.7417 10.7107 29.6712L26.5949 19.6572C28.1817 18.6568 28.1817 16.3433 26.5949 15.343L10.7107 5.329", fill="white")
 
-                img.cenImg(src="../../Resources/images/secB.png", alt="")
+                img.cenImg(src=" ./secB.png", alt="")
             section.containerC 
                 .cd
                     h2.ordinal-num  1 
@@ -103,4 +103,4 @@ html(lang="en")
                             ["Iterating and Improving UX Designs", "03", "45 Minutes"]
                         ]
                     )
-        include ../../../Layout/Footer/Footer.pug
+        include ../../Layout/Footer/Footer.pug
