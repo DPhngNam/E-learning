@@ -5,14 +5,15 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Document
-        link(rel="stylesheet", href="../../../Layout/Footer/Footer.css")
-        link(rel="stylesheet", href="../../../Layout/Header/style.css")
-        link(rel="stylesheet", href="../../css/CoursesPage.css")
-        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="stylesheet", href="../../Layout/Footer/_footer.css")
+        link(rel="stylesheet", href="../../Layout/Header/style.css")
+        link(rel="stylesheet", href="../../css/Courses/CoursesPage.css")
+        link(rel="preconnect" href="https://fonts.googleapi.com")
         link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
         link(href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Inter:wght@600;800&display=swap" rel="stylesheet")
     body 
-        include ../../../Layout/Header/Header.pug
+        include ../../Layout/Header/Header.pug
+
         main
             section.containerA 
                 h1 Online Courses on Design and Development
@@ -93,4 +94,4 @@ html(lang="en")
                                 'Building Responsive Websites',
                                 'Introduction to Bootstrap and React'
                                 )
-        include ../../../Layout/Footer/Footer.pug
+        include ../../Layout/Footer/Footer.pug

@@ -1,51 +1,58 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-:root{
+
+:root {
     --Absolute-White: #FFF;
     --White-97: #F7F7F8;
 }
 
-body{
+body {
     background-color: var(--White-97);
     font-family: "Be Vietnam Pro";
     font-style: normal;
     line-height: 150%;
 }
-.containerA{
+
+.containerA {
     margin: 0 auto;
     display: flex;
     gap: 80px;
     background-color: var(--White-97);
     margin-bottom: 80px;
-    padding: 0 60px 40px 60px ;
+    padding: 0 60px 40px 60px;
     margin-left: 20px;
 }
-.header{
+
+.header {
     display: flex;
 
     align-items: center;
     flex: 1 0 0;
 }
-h1{
+
+h1 {
     color: var(--Grey-15, #262626);
     font-size: 38px;
     font-weight: 600;
-    line-height: 150%; /* 57px */
-    
+    line-height: 150%;
+    /* 57px */
+
 
 }
-p{
+
+p {
     color: var(--Grey-35, #59595A);
     font-size: 16px;
     font-weight: 400;
-    line-height: 150%; /* 24px */
+    line-height: 150%;
+    /* 24px */
     flex: 1 0 0;
 }
 
-.containerB{
+.containerB {
     overflow: hidden;
     border-radius: 10px;
     display: flex;
@@ -53,23 +60,24 @@ p{
     height: 649px;
     justify-content: center;
     align-items: center;
-    background-color: red;
     margin-left: auto;
     margin-right: auto;
     position: relative;
 }
-.cenImg{
+
+.cenImg {
     width: 100%;
     height: auto;
-    
 }
-.containerC{
+
+.containerC {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 24px;
     margin: 80px 80px 0 80px;
 }
-.cd{
+
+.cd {
     border-radius: 10px;
     background: var(--Absolute-White, #FFF);
     padding: 40px;
@@ -77,28 +85,33 @@ p{
     flex-direction: column;
     gap: 40px;
 }
-.iconing{
+
+.iconing {
     position: absolute;
     border-radius: 68px;
     border: 4px solid rgba(255, 255, 255, 0.30);
     background: rgba(255, 255, 255, 0.20);
     padding: 10px;
 }
-.ordinal-num{
+
+.ordinal-num {
     color: var(--Grey-15, #262626);
     text-align: end;
     font-size: 60px;
     font-style: normal;
     font-weight: 700;
-    line-height: 24px; /* 40% */
+    line-height: 24px;
+    /* 40% */
 }
-.hd{
+
+.hd {
     color: var(--Grey-20, #333);
 
     font-size: 20px;
 
     font-weight: 600;
-    line-height: 150%; /* 30px */
+    line-height: 150%;
+    /* 30px */
     letter-spacing: -0.12px;
 }
 
@@ -109,12 +122,14 @@ p{
     justify-content: space-between;
     margin-bottom: 16px;
 }
-.card-dt-top{
+
+.card-dt-top {
     display: flex;
     flex-direction: column;
 
 }
-.time-line{
+
+.time-line {
     display: flex;
     flex-direction: row;
     padding: 10px;
@@ -123,27 +138,32 @@ p{
     background: var(--White-97, #F7F7F8);
     border-radius: 6px;
 }
-.detail-hd{
+
+.detail-hd {
     color: var(--Grey-20, #333);
     font-size: 16px;
     font-weight: 500;
 }
-.lesson{
+
+.lesson {
     color: var(--Grey-35, #59595A);
     font-size: 14px;
     font-weight: 400;
 }
-.time{
+
+.time {
     color: var(--Grey-35, #59595A);
     font-size: 14px;
     font-weight: 400;
     line-height: normal;
 }
-.special1{
+
+.special1 {
     border: 1px solid var(--Orange-80, #FFD599);
     background: var(--Absolute-White, #FFF);
     box-shadow: 0px 0px 0px 4px #FFF4E5;
 }
-.special2{
+
+.special2 {
     background: var(--Orange-90, #FFEACC);
 }
