@@ -288,7 +288,7 @@ main {
   color: var(--Grey-35, #59595A);
   font-size: 16px;
   margin-bottom: 60px;
-  word-spacing: 10px;
+  line-height: 150%;
 }
 .container__info .desc {
   display: inline-block;

@@ -1,5 +1,5 @@
-@use "../../../Layout/Header/Header_style.scss";
-@use "../../../Layout/Footer/_footer.scss";
+@use "../../Layout/Header/Header_style.scss";
+@use "../../Layout/Footer/_footer.scss";
 button:hover{
     filter: brightness(0.8);
 }
@@ -15,12 +15,12 @@ main{
             font-size: 30px;
             font-weight: 500;
             margin-bottom: 4px;
+            line-height: 150%;
         }
         & .testimonial{
             color: var(--Grey-35, #59595A);
             font-size: 16px;
             margin-bottom: 60px;
-            word-spacing: 10px;
         }
         & .desc {
             display: inline-block;

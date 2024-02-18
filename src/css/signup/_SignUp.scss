@@ -1,5 +1,5 @@
-@use "../../../Layout/Header/Header_style.scss";
-@use "../../../Layout/Footer/_footer.scss";
+@use "../../Layout/Header/Header_style.scss";
+@use "../../Layout/Footer/_footer.scss";
 button:hover{
     filter: brightness(0.8);
 }
@@ -20,7 +20,7 @@ main{
             color: var(--Grey-35, #59595A);
             font-size: 16px;
             margin-bottom: 60px;
-            word-spacing: 10px;
+            line-height: 150%;
         }
         & .desc {
             display: inline-block;

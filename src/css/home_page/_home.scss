@@ -1,5 +1,9 @@
-@use "../../../Layout/Header/Header_style.scss";
-@use "../../../Layout/Footer/_footer.scss";
+@use "../../Layout/Header/Header_style.scss";
+@use "../../Layout/Footer/_footer.scss";
+.Header-button-list>.Header-button:first-child{
+    background: #ff9500;
+    color: white;
+}
 main{
     margin: 0px 80px;
 }

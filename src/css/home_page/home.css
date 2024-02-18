@@ -56,9 +56,12 @@ body {
   gap: 23px;
   padding: 10px 0px;
 }
-.Header-banner .title {
-  display: inline-block;
+.Header-banner > .title {
+  display: block;
   color: white;
+}
+.Header-banner > * {
+  cursor: pointer;
 }
 .Header-content {
   padding: 16px 60px;
@@ -261,6 +264,11 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+.Header-button-list > .Header-button:first-child {
+  background: #ff9500;
+  color: white;
 }
 
 main {

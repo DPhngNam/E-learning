@@ -1,5 +1,5 @@
-@use "../../../Layout/Header/Header_style.scss";
-@use "../../../Layout/Footer/_footer.scss";
+@use "../../Layout/Header/Header_style.scss";
+@use "../../Layout/Footer/_footer.scss";
 button:hover{
     filter: brightness(0.8);
 }

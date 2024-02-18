@@ -28,6 +28,10 @@ body{
     margin-bottom: 80px;
     padding: 0 60px 40px 60px ;
 }
+.Header-button-list>.Header-button:first-child{
+    background: #ff9500;
+    color: white;
+}
 h1{
     color: var(--Grey-15, #262626);
     font-size: 38px;
