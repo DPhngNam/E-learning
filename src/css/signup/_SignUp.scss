@@ -1,5 +1,13 @@
 @use "../../Layout/Header/Header_style.scss";
 @use "../../Layout/Footer/_footer.scss";
+.Header-login .sign{
+    background-color: #FF9500;
+    color: white;
+}
+.Header-login > a:last-child{
+    background-color: transparent;
+    color: black;
+}
 button:hover{
     filter: brightness(0.8);
 }

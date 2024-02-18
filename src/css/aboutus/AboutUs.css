@@ -266,6 +266,11 @@ a {
   align-items: flex-start;
 }
 
+.Header-button-list > .Header-button:nth-child(3) {
+  background: #ff9500;
+  color: white;
+}
+
 button:hover {
   filter: brightness(0.8);
 }

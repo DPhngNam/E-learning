@@ -1,5 +1,9 @@
 @use "../../Layout/Header/Header_style.scss";
 @use "../../Layout/Footer/_footer.scss";
+.Header-button-list>.Header-button:nth-child(3){
+    background: #ff9500;
+    color: white;
+}
 button:hover{
     filter: brightness(0.8);
 }

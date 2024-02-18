@@ -28,7 +28,7 @@ body{
     margin-bottom: 80px;
     padding: 0 60px 40px 60px ;
 }
-.Header-button-list>.Header-button:first-child{
+.Header-button-list>.Header-button:nth-child(2){
     background: #ff9500;
     color: white;
 }

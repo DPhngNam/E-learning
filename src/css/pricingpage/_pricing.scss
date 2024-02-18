@@ -1,5 +1,8 @@
-@use "../../../reset.scss";
-
+@use "../../Layout/reset/reset.scss";
+.Header-button-list>.Header-button:nth-child(4){
+    background: #ff9500;
+    color: white;
+}
 .mainbody{
     background: var(--White-97, #F7F7F8);
     &-header{
